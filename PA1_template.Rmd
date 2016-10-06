@@ -159,7 +159,7 @@ knitr::kable(head(activity_new))
 
 2. Make a panel plot containing a time series plot (i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis). See the README file in the GitHub repository to see an example of what this plot should look like using simulated data.
 
-```{r }
+```{r average_step_by_5mn_daytype }
 average_step_by_5mn_daytype <- aggregate(steps ~ interval + day_type ,data= activity_new, mean)
 ggplot(data = average_step_by_5mn_daytype, aes(x= interval/100, y = steps))+geom_line()+facet_grid(day_type~.)+
         labs (title= "Average number of step by interval and day type", x="5mn interval (in hour)")

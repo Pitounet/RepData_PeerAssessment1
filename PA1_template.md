@@ -219,4 +219,4 @@ ggplot(data = average_step_by_5mn_daytype, aes(x= interval/100, y = steps))+geom
         labs (title= "Average number of step by interval and day type", x="5mn interval (in hour)")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
+![](PA1_template_files/figure-html/average_step_by_5mn_daytype-1.png)<!-- -->
